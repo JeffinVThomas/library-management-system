@@ -1,13 +1,11 @@
-   Library Management System
---------------------------------
+# Library Management System
 
-A full-stack Library Management System built with **Spring Boot (Java)** for the backend and **React** for the frontend. 
+A full-stack Library Management System built with **Spring Boot (Java)** for the backend and **React** for the frontend.  
 It allows users to browse and borrow books, while admins manage the library. Includes authentication, OTP verification, fine tracking, and SMS reminders.
 
 ---
 
-## Features
-------------
+##  Features
 
 - 🧑‍💼 User registration & login (JWT-based)
 - 🔐 Role-based access (Admin/User)
@@ -22,71 +20,63 @@ It allows users to browse and borrow books, while admins manage the library. Inc
 
 ##  Tech Stack
 
-| Layer     | Technology                 |
-|-----------|----------------------------|
-| Frontend  | React, React Bootstrap CSS |
-| Backend   | Spring Boot (Java)         |
-| Database  | MySQL                      |
-| Auth      | JWT                        |
-| SMS API   | Twilio                     |
+| Layer     | Technology               |
+|-----------|--------------------------|
+| Frontend  | React, React Bootstrap   |
+| Backend   | Spring Boot (Java)       |
+| Database  | MySQL                    |
+| Auth      | JWT                      |
+| SMS API   | Twilio                   |
 
 ---
 
-##   Project Setup
+##  Project Setup
 
-###-> 🔧 Backend (Spring Boot)
-------------------------------
-1. **Clone the repo** and navigate to the backend:
+### Backend (Spring Boot)
+
+1. Clone the repository:
    ```bash
+   
    git clone https://github.com/JeffinVThomas/library-management-system.git
    cd library-management-system/backend
    
-2. Configure application.properties:
-   Replace with your credentials:
-   ------------------------------
-    spring.datasource.username=your_mysql_username
-    spring.datasource.password=your_mysql_password
-    twilio.account.sid=your_twilio_sid
-    twilio.auth.token=your_twilio_token
-    twilio.phone.number=+91XXXXXXXXXX
-    jwt.secret=your_secure_jwt_secret
+2.Configure application.properties:
 
+spring.datasource.username=your_mysql_username
+spring.datasource.password=your_mysql_password
+twilio.account.sid=your_twilio_sid
+twilio.auth.token=your_twilio_token
+twilio.phone.number=+91XXXXXXXXXX
+jwt.secret=your_secure_jwt_secret
 
-3. Run the backend
-   -----------------
-    ./mvnw spring-boot:run
-##--------------------------------------------------------------------------------------
+3.Run the backend:
 
-###-> 💻 Frontend (React)
---------------------------
+./mvnw spring-boot:run
 
-1. Navigate to the frontend directory:
-   ------------------------------------
-    cd ../frontend
+💻 Frontend (React)
 
-2. Install dependencies:
-   ----------------------
-    npm install
+1.Navigate to the frontend directory:
 
-3. Start the frontend app:
-   -----------------------
-    npm start
+cd ../frontend
 
-##-------------------------------------------------------------------------------------
+2.Install dependencies:
 
-###-> 🗂️ Database Setup (MySQL)
---------------------------------
-1. Create the database:
-   --------------------
-   
-  CREATE DATABASE Library_Management_DB;
+npm install
 
-2. Spring Boot auto-generates all tables on startup using JPA (ddl-auto=update).
-##-------------------------------------------------------------------------------------
+3.Start the frontend app:
+
+npm start
+
+🗂️ Database Setup (MySQL)
+
+1.Create the database manually:
+
+CREATE DATABASE Library_Management_DB;
+
+2.Spring Boot will auto-generate all tables using JPA (ddl-auto=update).
 
 📁 Folder Structure
-perl
-Copy code
+
 library-management-system/
 ├── backend/         # Spring Boot backend
 │   ├── controller/
@@ -99,8 +89,8 @@ library-management-system/
 │   ├── components/
 │   └── styling/
 
-
 👤 Author
+
 Jeffin V Thomas
 Fresher Java Developer | Spring Boot | React | MySQL
 
